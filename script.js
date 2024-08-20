@@ -181,7 +181,7 @@ document.write(`<h1>Guess the secret number?</h1><br/>`);
 if(num==5){
    document.write(`"Bingo! Correct answer"<br><br><hr><br>`);
 }
-if(num>=6){
+else if(num>=6){
    document.write(`"Close enough to the correct answer"<br><br><hr><br>`);
 }
 else{
