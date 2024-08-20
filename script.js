@@ -6,7 +6,7 @@ if (city=="karachi"){
     document.write(`<h2>"Welcome to city of lights."</h2><br/><hr><br/>`);
 }
 else{
-   document.write(`<h2>"Welcome to your dream city.</h2><br/><hr><br/>`);
+   document.write(`<h2>"Welcome to ${city}.</h2><br/><hr><br/>`);
 }
 
 // 2. Write a program to take “gender” as input from user. If the user is male, give the message: Good Morning Sir. If the 
@@ -135,7 +135,11 @@ document.write(`<p style="font-size:20px";>d:This code will successfully display
       var total_marks=300;
       document.write(`Total Marks:${total_marks}<br>`);
 
-      var obtained_marks=prompt("Enter your marks");
+      var subj_1=+prompt("Enter your marks for subject_1.");
+      var subj_2=+prompt("Enter your marks for subject_2.");
+      var subj_3=+prompt("Enter your marks for subject_3.");
+
+      var obtained_marks=subj_1 + subj_2 + subj_3;
       document.write(`Obtained Marks:${obtained_marks}<br>`);
 
       var per = obtained_marks/total_marks*100;
